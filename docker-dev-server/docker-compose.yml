@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  api:
+    container_name: api_server
+    build:
+      context: ./api_server
+      dockerfile: Dockerfile
+    command: /home/node/src/api_server.js
+    volumes:
+      - ./api_server/src:/home/node/src
+    # ports:
+    #   - "8889:12345"
+  web:
+    container_name: http_server
+    build:
+      context: ./http_server
+      dockerfile: Dockerfile
+    command: python3 /home/http_server_user/src/http_server.py
+    volumes:
+      - ./http_server/src:/home/http_server_user/src
+    ports:
+      - "8080:8888"
+    environment:
+      - API_SERVER_URL=http://api:12345
