@@ -8,8 +8,3 @@ https://www.youtube.com/watch?v=EbicgT4KrWc
     - Take off the Afternoon *(12 to 4)*
     - Resume back in the evening *(4 and onwards)*
 
-2. **Nappuccino**
-    - Find your own "afternoon"
-    - Create peaceful sleeping environment
-    - Chug down coffee as quickly as possible
-    
