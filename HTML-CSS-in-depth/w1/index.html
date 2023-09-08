@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Little Lemon</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta name="author" content="Fakhir Shaheen">
+        <meta name="description" content="Fakhir's first web page">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="copyright" content="Copyright 2023">
+    </head>
+    <body>
+        <header>
+            <figure> 
+                <img src="logo.png" width="128" alt="My site Logo"> 
+                <figcaption>The logo of the website</figcaption> 
+             </figure>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Blog</h1>
+            <article>
+                <h2>2% off this weekend</h2>
+                <p>Come down to little lemon and your meal will be 20% off</p>
+            </article>
+            <article>
+                <h2>Our new menu</h2>
+                <p>We've updated our menu with new dinners.</p>
+            </article>
+            <input type="file" id="myfile" name="myfile">
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+            <h1>Sign Up</h1>
+            <form method="POST">
+                <div>
+                    <label for="user_first_name">First Name</label><br>
+                    <input type="text" id="user_first_name" name="user_first_name" required>
+                </div>
+                <div>
+                    <label for="user_last_name">Last Name</label><br>
+                    <input type="text" id="user_last_name" name="user_last_name" required>
+                </div>
+                <div>
+                    <label for="user_email">Email</label><br>
+                    <input type="email" id="user_email" name="user_email" required>
+                </div>
+                <div>
+                    <label for="user_password">Enter password</label><br>
+                    <input type="password" id="user_password" name="user_password">
+                </div>
+                <div>
+                    <label for="user_confirm_password">Confirm password</label><br>
+                    <input type="password" id="user_confirm_password" name="user_confirm_password">
+                </div>
+                <div>
+                    <label for="multiline_input">Enter your story</label><br>
+                    <textarea id="multiline_input" name="multiline_input" rows="10" cols="30" maxlength=”200”> 
+
+                    </textarea> 
+                </div>
+
+                <label for="course">Choose a course:</label><br> 
+                    <select id="course" name="courselist"> 
+                    <option value="html">HTML Introduction</option> 
+                    <option value="css">Styling with CSS</option> 
+                    <option value="js">JavaScript</option> 
+                    <option value="react">React Basics</option> 
+                </select> <br>
+
+                <fieldset id="size">
+                    <legend>Table Booking</legend>
+                    <div>
+                        <label for="booking_date">Booking Date</label>
+                        <input type="date" id="booking_date" name="booking_date">
+                    </div>
+                    <div>
+                        <label for="booking_people">Number of People</label>
+                        <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
+                        <output>4</output>
+                    </div>
+                    <div>
+                        <label for="booking_location">Locations</label>
+                        <input id="booking_location" name="booking_location" list="locations">
+                        <datalist id="locations">
+                            <option value="Downtown"></option>
+                            <option value="Uptown"></option>
+                        </datalist>
+                    </div>
+                </fieldset>
+            </form>
+
+            <h1>About</h1>
+            <video controls width="320" height="200" muted>
+                <source src="video.mp4" type="video/mp4">
+            </video> <br>
+
+            <audio loop controls>
+                <source src="audio.ogg" type="audio/ogg">
+            </audio> <br>
+
+            <iframe src="http://fakhirshaheen.com" allow="camera 'none'; microphone 'none';">
+                
+            </iframe>
+            <iframe src="http://fakhirshaheen.com" sandbox="">
+                
+            </iframe><br>
+
+            <canvas id="myCanvas" width="200" height="100" ">
+                Your browser does not support the HTML canvas tag.
+            </canvas><br>
+            <script src="animation.js"></script>
+
+        </main>
+        <footer>
+            <p>Copyright Little Lemon</p>
+        </footer>
+    </body>
+
+</html>
