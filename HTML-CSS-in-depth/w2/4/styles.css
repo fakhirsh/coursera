@@ -1,0 +1,24 @@
+@keyframes bounce {
+    0% {
+        transform: translate3d(0,0,0);
+    }
+    35% {
+        transform: translate3d(320px,320px,0);
+    }
+    70% {
+        transform: translate3d(640px,0,0);
+    }
+    100% {
+        transform: translate3d(0,0,0);
+    }
+}
+
+
+#ball {
+    width: 80px;
+    height: 80px;
+    background-color: #62687f;
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+    animation-timing-function: ease-in-out;
+}

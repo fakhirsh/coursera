@@ -1,0 +1,31 @@
+
+.box{
+    background-color: aquamarine;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 10px;
+}
+
+.flex-container{
+    background-color: cadetblue;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.box3{
+    background-color: blanchedalmond;
+    align-self: flex-start;
+    flex: 0 1 auto;
+}
+
+.box5{
+    background-color: darksalmon;
+    align-self: flex-end;
+    flex: 1 1 100%;
+    width:50%
+}
