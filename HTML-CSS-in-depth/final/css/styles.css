@@ -1,0 +1,105 @@
+
+body {
+    background-color: #EDEFEE;
+    font-family: 'Markazi Text', serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+}
+
+nav {
+    background-color:darkslategrey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    border-radius: 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a[href] {
+    color: aliceblue;
+    margin-right: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+footer {
+    margin-top: 30px;;
+    display: flex;
+}
+
+footer div {
+    flex: 1
+}
+
+footer div img {
+    height: 70px;
+}
+
+#hero-banner {
+    background-color: mediumpurple;
+    border-radius: 15px;
+    background-image: url(../assets/pasta.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    padding: 20px;
+}
+
+#container {
+    align-items: center;
+    justify-content: center;
+    background-color:blanchedalmond;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+#food {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#copyright {
+    display: flex;
+    align-items: top;
+    justify-content: right;    
+    border-top: 2px solid #000;
+}
+
+#copyright p{
+    margin-right: 20px;
+}
